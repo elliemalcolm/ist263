@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Heading of Scholarship Form</title>
+       
+    </head>
+    <body>
+        <h1>Scholarship Form</h1><br>
+
+        <table>
+            <caption>Scholarship Details</caption>
+            <tr>
+                <th>Name of Scholarship</th> <!-- headings dont have to be at the top -->
+                <th>Amount</th>
+                <th>Award Date</th>
+            </tr>
+            <tr>
+                <td>Memorial</td>
+                <td>$10,000</td>
+                <td>5/1/2024</td>
+            </tr>
+        </table>
+
+        <h2>Form</h2>
+
+        <form action=" " method="post">
+            <!-- all the form tags are inline -->
+            <label>Year in school - sophomore, junior, senior</label><br>
+            <select id="grade" name="grade">
+                <option>Select an Option</option> <!-- no value so this option sends nothing -->
+                <option value="sophomore">sophomore</option>
+                <option value="junior">junior</option>
+                <option value="senior">senior</option>
+            </select><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

@@ -31,5 +31,30 @@
         </table>
 
         <h2>Forms</h2>
+
+        <form action=" " method="post">
+            <!-- all the form tags are inline -->
+            <label for="fullname">What's you name:</label><br>
+            <input type="text" id="fullname" name="Full Name"><br>
+            <label for="instructions">Special Instructions:</label><br>
+            <textarea id="instructions" name="instructions" row="3" cols="50"></textarea><br>
+            <input type="radio" id="pickup" name="pickdelivery" checked="yes" value="customer wants pickup">
+            <label for="pickup">pickup</label>
+            <input type="radio" id="delivery" name="pickdelivery" value="customer wants delivery">
+            <label for="delivery">delivery</label><br>
+
+            <input type="checkbox" id="extra" name="extra" value="extra sauce">
+            <label for="extra">extra sauce</label><br>
+
+            <label>Neighborhood</label><br>
+            <select id="neighborhood" name="neighborhood">
+                <option>Select an Option</option> <!-- no value so this option sends nothing -->
+                <option value="westcott">Westcott</option>
+                <option value="downtown">Downtown</option>
+                <option value="eastwood">Eastwood</option>
+            </select><br>
+
+            <input type="submit" value="send form">
+        </form>
     </body>
 </html>
