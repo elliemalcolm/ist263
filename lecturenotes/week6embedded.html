@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Embedded CSS</title>
+    <style>
+        h1 {color:mediumturquoise;}
+        /* body selects everything */
+        body {
+            background-color: darkgray;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          }
+        p, h1, a /* grouped selector */ {
+            font-size: 2em;
+            font-weight: bolder;
+            background-color: cadetblue;
+          }
+        /* in em 2 is twice the default size */
+
+        p a {text-decoration: none;} /*got rid of underline for ebay link*/
+        #secondpara {color:aqua;} /*use of id allowed us to change color of only one paeagraph*/
+        .yellow {color:yellow;}  /*elements with class="yellow" have this applied to them */
+    </style>
+</head>
+<body>
+    <h1 class="yellow">CSS</h1>
+    <a class="yellow" href="www.amazon.com">Amazon</a>
+    <p><a href="http://www.ebay.com">Ebay</a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique libero aliquid, quia temporibus aperiam id accusamus unde sit maiores ab ad, beatae eligendi repellendus, consectetur reiciendis suscipit eveniet ea. Perferendis?</p>
+    <!-- each value for id must be unique -->
+    <p id="secondpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique libero aliquid, quia temporibus aperiam id accusamus unde sit maiores ab ad, beatae eligendi repellendus, consectetur reiciendis suscipit eveniet ea. Perferendis?</p>
+</body>
+</html>
