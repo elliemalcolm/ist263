@@ -61,10 +61,12 @@ aside {border-radius: 10px;}
 
 .row1 {align-items: flex-end;}
 
-
+nav {{display: flex;
+    flex-wrap: wrap;}
+}
 
 @media only screen and {max-width:600px;} {
-nav {display: block;} 
+nav {display: block; width:100%;} 
 }
 
 @media only screen and {min-width:601px ;} {
