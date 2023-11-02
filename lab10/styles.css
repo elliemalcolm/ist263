@@ -61,8 +61,6 @@ aside {border-radius: 10px;}
 
 .row1 {align-items: flex-end;}
 
-nav 
-    {flex-wrap: wrap;}
 
 @media only screen and (max-width: 600px) {
 nav {display: block;} 
