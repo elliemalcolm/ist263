@@ -66,6 +66,6 @@ nav
 
 @media only screen and (max-width: 600px) {
 nav {display: block;} 
-a {display: inline;}
+a {display: block;}
 span {display: none;}
 }
