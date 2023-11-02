@@ -65,5 +65,7 @@ nav
     {flex-wrap: wrap;}
 
 @media only screen and {max-width: 600px} {
-nav {display: block; display:100%;} 
+nav {display: block;} 
+a {display: 100%;;}
+span {display: none;}
 }
