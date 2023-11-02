@@ -61,7 +61,7 @@ aside {border-radius: 10px;}
 
 .row1 {align-items: flex-end;}
 
-nav {{display: flex;
+nav {{display: block; 
     flex-wrap: wrap;}
 }
 
