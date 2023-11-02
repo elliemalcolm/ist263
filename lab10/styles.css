@@ -70,6 +70,6 @@ nav {display: block; width:100%;}
 }
 
 @media only screen and {min-width:601px ;} {
-    nav {display: none}
+    nav {display: 100;}
 }
 
