@@ -65,7 +65,7 @@ nav {display: flex;}
 
 @media only screen and (max-width: 600px) {
 nav {display: block;} 
-nav a {display: block; margin: 10px 0;}
+nav a {display: block; margin: 0 10px ; padding: 2px;}
 span {display: none;}
 nav a {;}
 }
