@@ -13,7 +13,14 @@
         .picture {margin: 5px; max-width: 100px; justify-content:baseline;}
         .footertagline {float: right;}
         .cart {float: right;}
-        
+        .searchrow1, .searchrow2 {display: flex; padding: 15px;}
+        .search1, .search2, .search3, .search4 {padding: 10px;}
+        .search1, .search2, .search3, .search4 {text-align: center;}
+        .search1image, .search2image, .search3image, .search4image {max-width: 250px; max-height: 150px;}
+        .search3, .search4 {width: 50%;}
+        .searchbar {display: flex;}
+        .topofpage {display: flex;}
+
     </style>
     <title>Search Page</title>
 </head>
@@ -34,7 +41,73 @@
         <a href="cart.html" class="cart">&#128722;</a> 
     
     </nav>
+
+    <br> 
+    <textarea name="searchbar" class="searchbar" rows="1" cols="160">Enter search here...</textarea><br>
+    <form method="POST">
+        <input type="checkbox" id="athletic" name="search_idea" value="HTML">
+        <label for="athletic">Athletics</label>
+        <input type="checkbox" id="arts" name="search_idea" value="HTML">
+        <label for="arts">Performing or Illustrative Arts</label>
+        <input type="checkbox" id="religious" name="search_idea" value="HTML">
+        <label for="religious">Religious or Cultural</label>
+        <input type="checkbox" id="club" name="search_idea" value="HTML">
+        <label for="club">RSO Club Event</label>
+        <input type="checkbox" id="speaker" name="search_idea" value="HTML">
+        <label for="speaker">Speaker Series</label>
+        <input type="checkbox" id="service" name="search_idea" value="HTML">
+        <label for="service">Volunteering Event</label>
+
+    </form>
+<br>
+    <button type="submit">Search</button> 
+
+    <div class="searchrow1">
+        <div class="search1">
+            <div>
+                <img src="../images/speaker.jpg" class="search1image" alt="advertising">
+            </div>
+            <div>
+                <strong>AD</strong> Newhouse Speaker Series Sunday, November 12: "How To Become Your Best Career YOU"
+            </div>
+
+        </div>
+
+        <div class="search2">
+            <div>
+                <img src="../images/lacrosse.jpg" class="search2image" alt="picture">
+            </div>
+            <div>
+                <strong>AD</strong> Syracuse Women's Lacrosse takes on Penn State at JMA Wireless Dome November 8. Entry free. 
+            </div>
+
+        </div>
+    </div>
     
+    <div class="searchrow2">
+        <div class="search3">
+            <div>
+                <img src="../images/theatre.jpg" class="search3image" alt="picture">
+            </div>
+            <div>
+                <strong>AD</strong> Down at Syracuse Stage, come see SU club First-Year Players put on their debut showing of "Mamma Mia: The Musical." Tickets go on sale November 7th at 8pm for $5, and shows run from November 10th to 15th.
+            </div>
+
+        </div>
+
+        <div class="search4">
+            <div>
+                <img src="../images/band.jpg" class="search4image" alt="picture">
+            </div>
+            <div>
+                <strong>AD</strong> Marching Band: The Band<br> Friday, November 10th at 3:30pm outside of Hendrick's Chapel, rain or shine.
+            </div>
+
+        </div>
+
+    </div>
+
+
     <footer>
         <hr>
         <p> &copy;2023
