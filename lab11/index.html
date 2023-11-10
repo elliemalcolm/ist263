@@ -9,6 +9,19 @@
             .tagline {float:right;}
             .img1 {float:left; margin-right: 15px;}
             .paragraph {clear:both;}
+
+            .skip {background-color: #ffbf00;
+                padding: 5px;
+                border: 1.px #000000;
+                text-decoration: none;
+                position: absolute;  /* positions an element relative to the top left corner of the viewport */
+                top: 10px;
+                left: -999px; /*position it off the left side of screen, -999 is convention to remind that you want something hidden */
+        }
+
+        .skip:focus {
+            left: 10px;
+        }
         </style>
         <title>Ellie Malcolm - Bio</title>
         <link rel="stylesheet" href="styles.css">
@@ -16,7 +29,9 @@
 
 
     <body>
-        <nav> <a href="index.html">Home</a> <span>|</span>
+        <nav>
+            <a href="#main" class="skip" tabindex="1">Skip to Content</a> <br>
+            <a href="index.html">Home</a> <span>|</span>
             <a href="skills.html">Skills</a> <span>|</span>
             <a href="contact.html">Contact</a> <span>|</span>
         
