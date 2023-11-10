@@ -1,0 +1,72 @@
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;
+background-color:#87a6df;
+color:#000000;
+}
+
+a:link{color: #59be91
+}
+
+a:hover{color:#1d3e2f}
+
+
+h1 {color:#ac27b3;
+    font-size: 2.75em;
+}
+
+h2 {color:#3e3e3e}
+
+nav {background-color: #b0c1ff;}
+
+nav a{color:#59be91}
+nav a:hover {background-color: #d8ffb6;}
+nav {padding:10px}
+nav {margin-bottom: 30px}
+
+.size {width: 50px;
+        length: 50px;
+    
+}
+
+.everything {display:flex;}
+.imagesandtext {display: flex;}
+.otherskills {display:flex;}
+.row2 {display:flex;}
+.row1 {display:flex;}
+.imagesandtext {flex-wrap: wrap;}
+.otherskills {flex-wrap: wrap;}
+aside {background-color: #b5c7e9;}
+aside {color:#3e3e3e}
+aside {border-radius: 10px;}
+.imagesandtext {width: 75%;}
+.otherskills {width: 25%;}
+.opener {width: 72%;}
+
+.row2 {flex-basis: 100%;}
+.row1 {flex-basis: 100%;}
+.otherskillstitle {flex-basis: 100%;}
+.otherskillslist {flex-basis: 100%;}
+.row1 {margin-bottom: 0px;}
+.row1 {margin-top: 80px;}
+.row2 {margin-top: 0px;}
+
+
+.otherskills {justify-content: space-around;}
+.row1 {justify-content: space-around;}
+.row2 {justify-content: space-around;}
+.imagesandtext {justify-content: space-around;}
+.opener {padding: 20px;}
+.everything {padding: 20px;}
+.otherskillslist {margin: 15px}
+.otherskillstitle {margin: 15px;}
+
+.row1 {align-items: flex-end;}
+
+nav {display: flex;}
+
+@media only screen and (max-width: 600px) {
+nav {display: block;} 
+nav a {display: block; 
+       margin: 0 10px; 
+      padding: 2px;}
+span {display: none;}
+}
