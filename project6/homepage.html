@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        nav {padding:10px; margin-bottom: 30px; background-color: #ec901e; width:auto;}
+  nav {padding:10px; margin-bottom: 30px; background-color: #ec901e;}
         nav a:hover {color: #ffffff;}
         nav a {color: #000000}
+        @media only screen and (max-width: 500px) {
+            nav {display: block;} 
+            nav a {display: block; 
+                    margin: 0 10px; 
+                    padding: 2px;
+                    background-color: #ec901e;
+                    }
+            span {display: none;}
+            .cart {float: left;}
+            }
+
+        @media only screen and (min-width: 501px) {
+            .cart {float: right;}
+        }
         body {background-color: #8fbbe6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
         .header {display: flex; align-items:center;}
         h2 {margin: 10px; padding: 10px; justify-content: center;}
@@ -18,7 +32,6 @@
         .tagline {font-size:xx-large;}
         .tagline:hover {color: #ec901e;}
         .footertagline {float: right;}
-        .cart {float: right;}
         .topofpage {display: flex;}
         .basketballpic {display: flex; justify-content: center; align-items: flex-start; max-width: 100%;}
         .basketballpic2 {display: flex; justify-content: center; align-items: flex-start; max-width: 100%;}
@@ -44,7 +57,7 @@
     <nav> <a href="homepage.html">Home</a> <span>|</span>
         <a href="searchpage.html">Search</a> <span>|</span>
         <a href="contactpage.html">Contact</a> <span>|</span>
-        <a href="cart.html" class="cart">&#128722;</a> 
+        <a href="cart.html" class="cart">&#128722;</a> <br>
     
     </nav>
     <p class="opening">Syracuse University is home to a diverse range of events. Here, you have access to every type of event hosted on Syracuse University grounds. Unlike past ticket programs with the university that are a culmination of sites and links, every experience on the campus is right here within this portal. Athletics, plays, religious gatherings, and anything else you have heard of...</p>
@@ -55,7 +68,7 @@
                 <img src="../images/SUbasketball.jpg" class="basketballpic" alt="advertising">
             </div>
             <div>
-                <strong>AD</strong> This upcoming Thursday, get ready for an exctiing opening Men's Basketball game at THE JMA Wireless Dome at 7:30pm. Tickets start at $25.99.
+                <strong>AD</strong> This upcoming Thursday, get ready for an exciting opening Men's Basketball game at THE JMA Wireless Dome at 7:30pm. Tickets start at $25.99.
             </div>
         </div>
         <br>

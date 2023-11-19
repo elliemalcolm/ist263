@@ -7,12 +7,25 @@
   nav {padding:10px; margin-bottom: 30px; background-color: #ec901e;}
         nav a:hover {color: #ffffff;}
         nav a {color: #000000}
+        @media only screen and (max-width: 500px) {
+            nav {display: block;} 
+            nav a {display: block; 
+                    margin: 0 10px; 
+                    padding: 2px;
+                    background-color: #ec901e;
+                    }
+            span {display: none;}
+            .cart {float: left;}
+            }
+
+        @media only screen and (min-width: 501px) {
+            .cart {float: right;}
+        }
         body {background-color: #8fbbe6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
         .header {display: flex; align-items:center;}
         h2 {margin: 10px; padding: 10px; justify-content: center;}
         .picture {margin: 5px; max-width: 100px;}
         .footertagline {float: right;}
-        .cart {float: right;}
         .carttext {text-align: center;}
         .topofpage {display: flex;}
 
@@ -33,7 +46,7 @@
     <nav> <a href="homepage.html">Home</a> <span>|</span>
         <a href="searchpage.html">Search</a> <span>|</span>
         <a href="contactpage.html">Contact</a> <span>|</span>
-        <a href="cart.html" class="cart">&#128722;</a> 
+        <a href="cart.html" class="cart">&#128722;</a> <br>
     
     </nav>
 

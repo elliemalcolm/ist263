@@ -7,20 +7,45 @@
   nav {padding:10px; margin-bottom: 30px; background-color: #ec901e;}
         nav a:hover {color: #ffffff;}
         nav a {color: #000000}
+        @media only screen and (max-width: 500px) {
+            nav {display: block;} 
+            nav a {display: block; 
+                    margin: 0 10px; 
+                    padding: 2px;
+                    background-color: #ec901e;
+                    }
+            span {display: none;}
+            .cart {float: left;}
+            }
+
+        @media only screen and (min-width: 501px) {
+            .cart {float: right;}
+        }
+       
         body {background-color: #8fbbe6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
         .header {display: flex; align-items:center;}
+        .topofpage {display: flex;}
         h2 {margin: 10px; padding: 10px; justify-content: center;}
         .picture {margin: 5px; max-width: 100px;}
         .footertagline {float: right;}
-        .cart {float: right;}
-        .searchrow1 {display: flex; padding: 15px; justify-content: center; align-items: flex-start; width: 100%;}
-        .searchrow2 {display: flex; padding: 15px; justify-content: center; align-items: flex-start; width: 100%;}
+        .searchrow1 {display: flex; padding: 15px; justify-content: center; margin: 15px;}
+        .searchrow2 {display: flex; padding: 15px; justify-content: center; margin: 15px;}
         .search1, .search2, .search3, .search4 {text-align: center; margin: 15px;}
         .search1image, .search2image, .search3image, .search4image {max-width: 250px; max-height: 150px;}
-        .search3, .search4 {width: 50%;}
         .searchbar {display: flex; width: 100%;}
-        .topofpage {display: flex;}
+
+        @media screen and (max-width: 500px) {
+            .searchrow1 {display: block;}
+        }
+                @media screen and (max-width: 500px) {
+            .searchrow2 {display: block;}
+        }
+        @media screen and (min-width: 501px) {
+            .search3, .search4 {width: 50%;}
+        }
+        
  
+
 
     </style>
     <title>Search Page</title>
@@ -39,7 +64,7 @@
     <nav> <a href="homepage.html">Home</a> <span>|</span>
         <a href="searchpage.html">Search</a> <span>|</span>
         <a href="contactpage.html">Contact</a> <span>|</span>
-        <a href="cart.html" class="cart">&#128722;</a> 
+        <a href="cart.html" class="cart">&#128722;</a> <br>
     
     </nav>
  
