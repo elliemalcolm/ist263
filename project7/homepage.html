@@ -74,11 +74,19 @@
     #quote {
       font-size: 18px;
       margin-bottom: 20px;
-      font-family: 'Merriweather'
+      font-family: 'Merriweather';
+      text-align: center;
+      
     }
+    #quote:hover {color: #ec901e;}
 
     button {
-      cursor: pointer;}
+      cursor: pointer;
+      display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    }
 
     </style>
 
@@ -91,28 +99,6 @@
 <body>
 
     <main>
-
-        <div>
-            <p id="quote"></p>
-            <button onclick="generateQuote()">SU Inspiration</button>
-          </div>
-        
-          <script>
-            const quotes = [
-              "Syracuse is the best place on Earth",
-              "Why wouldn't you want to be at Syracuse University",
-              "Sorry, I'm busy hanging with Otto",
-              "BLEED ORANGE",
-              "Syracuse University has my heart"
-            ];
-        
-            function generateQuote() {
-              const quoteElement = document.getElementById('quote');
-              const randomIndex = Math.floor(Math.random() * quotes.length);
-              quoteElement.textContent = quotes[randomIndex];
-            }
-            generateQuote();
-          </script>
 
         <a href="searchpage.html" class="skip" tabindex="1">Skip to Content</a> <br>
 
@@ -132,6 +118,29 @@
         <a href="cart.html" class="cart">&#128722;</a> <br>
     
     </nav>
+
+    <div>
+        <p id="quote"></p>
+        <button onclick="generateQuote()">SU Inspiration</button>
+      </div>
+    
+      <script>
+        const quotes = [
+          "Syracuse is the best place on Earth",
+          "Why wouldn't you want to be at Syracuse University",
+          "Sorry, I'm busy hanging with Otto",
+          "BLEED ORANGE",
+          "Syracuse University has my heart"
+        ];
+    
+        function generateQuote() {
+          const quoteElement = document.getElementById('quote');
+          const randomIndex = Math.floor(Math.random() * quotes.length);
+          quoteElement.textContent = quotes[randomIndex];
+        }
+        generateQuote();
+      </script>
+
     <p class="opening">Syracuse University is home to a diverse range of events. Here, you have access to every type of event hosted on Syracuse University grounds. Unlike past ticket programs with the university that are a culmination of sites and links, every experience on the campus is right here within this portal. Athletics, plays, religious gatherings, and anything else you have heard of...</p>
     <p class="tagline"><strong>All. Right. Here.</strong></p>
     <div>

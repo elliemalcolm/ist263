@@ -126,8 +126,8 @@
             </script>
 
 
-            <label for="ticketquantityform" id="ticketquantity">Ticket Quantity</label>
-            <select id="ticketquantityoptions" name="ticketquantity">
+            <label for="ticketquantityform">Ticket Quantity</label>
+            <select id="ticketquantityform" name="ticketquantity">
             <option value="0">1</option>
             <option value="1">2</option>
             <option value="2">3</option>
@@ -139,12 +139,13 @@
   <br> <br>
 
   <form>
-    <label for="promocodeenter" id="promocodeenter"><textarea id="promocodetextenter" class="promocodeenter" rows="1" cols="160">Enter Promo Code Here</textarea></label>
+    <label for="promocodeenter">
+        <textarea id="promocodetextenter" rows="1" cols="160">Enter Promo Code Here</textarea></label>
     </form><br>
 
-            <form action="/submit" method="post" id="addtocart">
+            <form action="/submit" method="post" id="AddtoCartform">
 
-                <input type="submit" value="Add to Cart" id="addtocart">
+                <input type="submit" value="AddtoCart" id="AddtoCart">
             </form>
 
         </div>
