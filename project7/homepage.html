@@ -69,6 +69,17 @@
 
         .skip:focus {
         left: 10px;} 
+
+
+    #quote {
+      font-size: 18px;
+      margin-bottom: 20px;
+      font-family: 'Merriweather'
+    }
+
+    button {
+      cursor: pointer;}
+
     </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,8 +89,33 @@
     <link rel="shortcut icon" type="image/x-icon" href="../project7/favicon.ico">
 </head>
 <body>
+
     <main>
+
+        <div>
+            <p id="quote"></p>
+            <button onclick="generateQuote()">SU Inspiration</button>
+          </div>
+        
+          <script>
+            const quotes = [
+              "Syracuse is the best place on Earth",
+              "Why wouldn't you want to be at Syracuse University",
+              "Sorry, I'm busy hanging with Otto",
+              "BLEED ORANGE",
+              "Syracuse University has my heart"
+            ];
+        
+            function generateQuote() {
+              const quoteElement = document.getElementById('quote');
+              const randomIndex = Math.floor(Math.random() * quotes.length);
+              quoteElement.textContent = quotes[randomIndex];
+            }
+            generateQuote();
+          </script>
+
         <a href="searchpage.html" class="skip" tabindex="1">Skip to Content</a> <br>
+
         <div class="topofpage">
             <div class="picturediv">
                 <a href="homepage.html"><img src="../images/SUlogo.png" class="picture" alt="Profile"> </a>
