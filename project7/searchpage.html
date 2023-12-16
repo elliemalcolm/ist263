@@ -42,11 +42,10 @@
         @media screen and (max-width: 500px) {
             .searchrow1 {display: block;}
             .search1 {padding-bottom: 40px;}
-        }
-                @media screen and (max-width: 500px) {
             .searchrow2 {display: block;}
             .search3 {padding-bottom: 40px;}
         }
+
         @media screen and (min-width: 501px) {
             .search3, .search4 {width: 50%;}
         }
@@ -139,10 +138,11 @@
         </script>
 
         <br>
-     <form>
-        <label for="searchbar" id="SearchPagelink"><textarea id="searchbar" class="searchbar" rows="1" cols="160">Enter search here...</textarea></label>
-    </form><br>
-    <form method="POST" class="searchform">
+     
+        <form action="/search" method="POST">
+            <input type="text" id="searchbar" class="searchbar" placeholder="Enter search here...">
+        </form><br>
+    <form method="POST" class="searchform" for="categoriesforsearching">
         <input type="checkbox" id="athletic" name="search_idea" value="HTML">
         <label for="athletic">Athletics</label>
         <input type="checkbox" id="arts" name="search_idea" value="HTML">
