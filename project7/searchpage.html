@@ -55,6 +55,39 @@
         font-family: 'Merriweather'
     } 
     .adinfo {padding-top: 10px;}
+
+    #modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      top: 50%;
+      left: 50%;
+      font-family: 'Merriweather'
+    }
+
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      font-family: 'Merriweather'
+    }
+
+    button, #searchbar {font-family: 'Merriweather'}
+
+    /* Style for the button to open the modal */
+    #openModalBtn {
+      cursor: pointer;
+    }
+
     </style>
 
 
@@ -79,6 +112,35 @@
     
     </nav>
     <main>
+
+        <button id="openModalBtn"><strong>Winter Discount</strong></button> <br>
+
+        <div id="overlay"></div>
+        <div id="modal">
+          <p>This holiday season, enjoy 15% off at checkout on all purchases of 3 or more using discount code <strong>CHILLY</strong></p>
+          <button onclick="closeModal()">Close</button>
+        </div>
+      
+        <script>
+          // JavaScript for opening and closing the modal
+          const modal = document.getElementById('modal');
+          const overlay = document.getElementById('overlay');
+          const openModalBtn = document.getElementById('openModalBtn');
+      
+          function openModal() {
+            modal.style.display = 'block';
+            overlay.style.display = 'block';
+          }
+      
+          function closeModal() {
+            modal.style.display = 'none';
+            overlay.style.display = 'none';
+          }
+      
+          openModalBtn.addEventListener('click', openModal);
+        </script>
+
+        <br>
      <form>
     <label for="searchbar" id="SearchPagelink"><textarea id="searchbar" class="searchbar" rows="1" cols="160">Enter search here...</textarea></label>
     </form><br>
@@ -99,6 +161,9 @@
     </form>
 <br>
     <button type="submit">Search</button> 
+
+    
+
 
     <div class="searchrow1">
         <div class="search1">

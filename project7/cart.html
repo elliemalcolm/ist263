@@ -14,7 +14,9 @@
         .picture {margin: 5px; max-width: 100px;}
         .carttext {text-align: center;}
         .speakerimagecart {
-            max-width: 400px;}
+            max-width: 400px;
+        align-self: center;
+        }
 
         .incart { width: 100%;
             display: flex; 
@@ -38,7 +40,8 @@
             .incartimage, .incartinfo {width: 50%; justify-content:center; text-align: center;}
         }
 
-        #speakerInfoDetails {display: none;}
+        #speakerInfoDetails {display: none;
+        font-family: 'Merriweather';}
 
         button {
             background-color:#e79c33;
@@ -56,6 +59,10 @@
         
         .incartdescription {font-family: 'Merriweather';}
         #ticketquantity, #addtocart {font-family: 'Merriweather';}
+        #promocodeenter {cursor: pointer; display:flex;
+            align-items: center;
+      justify-content: center;
+        }
 
 
     </style>
@@ -121,15 +128,19 @@
 
             <label for="ticketquantity" id="ticketquantity">Ticket Quantity</label>
             <select id="ticketquantity" name="ticketquantity">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
+            <option value="0">1</option>
+            <option value="1">2</option>
+            <option value="2">3</option>
             <option value="3">4</option>
             <option value="3">5</option>
             <option value="3">6</option>
+            <option value="3">0</option>
   </select>
   <br> <br>
+
+  <form>
+    <label for="promocodeenter" id="promocodeenter"><textarea id="promocodeenter" class="promocodeenter" rows="1" cols="160">Enter Promo Code Here</textarea></label>
+    </form><br>
 
             <form action="/submit" method="post" id="addtocart">
 
