@@ -3,10 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather&family=Public+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="finalproject.css">
     <style>
   nav {padding:10px; margin-bottom: 30px; background-color: #ec901e;}
         nav a:hover {color: #ffffff;}
@@ -27,7 +23,6 @@
         }
        
         body {background-color: #8fbbe6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
-        adinfo
         .header {display: flex; align-items:center;}
         .topofpage {display: flex;}
         h2 {margin: 10px; padding: 10px; justify-content: center;}
@@ -36,12 +31,11 @@
         .searchrow1 {display: flex; padding: 15px; justify-content: center; margin: 15px;}
         .searchrow2 {display: flex; padding: 15px; justify-content: center; margin: 15px;}
         .search1, .search2, .search3, .search4 {text-align: center; margin: 15px;}
-        .search1image, .search2image, .search3image, .search4image {max-width: 250px; max-height: 150px; min-height: 150px;}
+        .search1image, .search2image, .search3image, .search4image {max-width: 250px; max-height: 150px;}
         .searchbar {display: flex; width: 100%;}
 
         @media screen and (max-width: 500px) {
             .searchrow1 {display: block;}
-            .search1, .search3 {padding-bottom: 45px;}
         }
                 @media screen and (max-width: 500px) {
             .searchrow2 {display: block;}
@@ -50,36 +44,7 @@
             .search3, .search4 {width: 50%;}
         }
 
-        button, .searchform, .adinfo { font-family: 'Merriweather';}
-
-        #modal {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      top: 50%;
-      left: 50%;
-      font-family: 'Merriweather'
-    }
-
-    #overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      font-family: 'Merriweather'
-    }
-
-    #openModalBtn {
-      cursor: pointer;
-        }
+        .searchform, .adinfo {font-family: 'Noto Sans', sans-serif;}
         
     </style>
 
@@ -108,37 +73,6 @@
     
     </nav>
     <main>
-
-        <button id="openModalBtn"><strong>Winter Discount</strong></button> <br>
-
-        <div id="overlay"></div>
-        <div id="modal">
-          <p>This holiday season, enjoy 15% off at checkout on all purchases of 3 or more using discount code <strong>CHILLY</strong></p>
-          <button onclick="closeModal()">Close</button>
-        </div>
-      
-        <script>
-          // JavaScript for opening and closing the modal
-          const modal = document.getElementById('modal');
-          const overlay = document.getElementById('overlay');
-          const openModalBtn = document.getElementById('openModalBtn');
-      
-          function openModal() {
-            modal.style.display = 'block';
-            overlay.style.display = 'block';
-          }
-      
-          function closeModal() {
-            modal.style.display = 'none';
-            overlay.style.display = 'none';
-          }
-      
-          openModalBtn.addEventListener('click', openModal);
-        </script>
-
-        <br>
-
-
      <form>
     <label for="searchbar" id="SearchPagelink"><textarea id="searchbar" class="searchbar" rows="1" cols="160">Enter search here...</textarea></label>
     </form><br>
@@ -163,20 +97,20 @@
     <div class="searchrow1">
         <div class="search1">
             <div>
-                <img src="../images/speakerimage.jpg" class="search1image" alt="advertising">
+                <img src="../images/speaker.jpg" class="search1image" alt="advertising">
             </div>
             <div>
-               <strong>AD</strong> <section class=adinfo>Newhouse Speaker Series Sunday, Janaury 12: "How To Become Your Best Career YOU"</section>
+               <strong>AD</strong> <section class=adinfo>Newhouse Speaker Series Sunday, November 12: "How To Become Your Best Career YOU"</section>
             </div>
 
         </div>
 
         <div class="search2">
             <div>
-                <img src="../images/lacrosseimage.jpg" class="search2image" alt="picture">
+                <img src="../images/lacrosse.jpg" class="search2image" alt="picture">
             </div>
             <div>
-                <strong>AD</strong>  <section class=adinfo>Syracuse Men's Lacrosse takes on Penn State at JMA Wireless Dome December 18th at 1pm. Entry free.</section> 
+                <strong>AD</strong>  <section class=adinfo>Syracuse Women's Lacrosse takes on Penn State at JMA Wireless Dome November 8. Entry free.</section> 
             </div>
 
         </div>
@@ -185,20 +119,20 @@
     <div class="searchrow2">
         <div class="search3">
             <div>
-                <img src="../images/concertimage.jpg" class="search3image" alt="picture">
+                <img src="../images/theatre.jpg" class="search3image" alt="picture">
             </div>
             <div>
-                <strong>AD</strong>  <section class=adinfo>University Union is ramping up their concert series with a brand new annual festival titled "Luxurious and Local." The two-day festival will take place on South Campus and feature all local singers and bands, as well as the addition of locally-sourced food for all eating venues.</section>
+                <strong>AD</strong>  <section class=adinfo>Down at Syracuse Stage, come see SU club First-Year Players put on their debut showing of "Mamma Mia: The Musical." Tickets go on sale November 7th at 8pm for $5, and shows run from November 10th to 15th.</section>
             </div>
 
         </div>
 
         <div class="search4">
             <div>
-                <img src="../images/volleyballimage.jpg" class="search4image" alt="picture">
+                <img src="../images/band.jpg" class="search4image" alt="picture">
             </div>
             <div>
-                <strong>AD</strong>  <section class=adinfo>The Club Volleyball finals for both men and women are December 21st in the Barnes Center. Admission is $2 and will feature a special performance from 'Cuse Cheer in between the two games.</section>
+                <strong>AD</strong>  <section class=adinfo>Marching Band: The Band<br> Friday, November 10th at 3:30pm outside of Hendrick's Chapel, rain or shine.</section>
             </div>
 
         </div>
