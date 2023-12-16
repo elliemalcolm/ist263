@@ -51,7 +51,7 @@ nav a {color: #000000}
 
 /* FOOTER */
 
-    .footertagline {float: right;}
+    .footertagline {float: right; font-family: 'Bebas Neue';}
     footer {
         font-family: 'Bebas Neue';
         padding: 10px;
