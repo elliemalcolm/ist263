@@ -10,7 +10,7 @@
     <title>SU Ticket Hub</title>
     <style>
 
-        p {font-family: 'Noto Sans', sans-serif;
+        p {
             font-weight: 500;
             }
         .tagline {font-weight: 600;}
@@ -82,11 +82,21 @@
 
     button {
       cursor: pointer;
-      display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+            text-align: center; 
+            padding:10px; 
     }
+
+    button:hover {
+        color:#ec901e;
+        border-color: #ec901e;
+    
+    }
+
+    .quotediv {
+        display: flex;
+  justify-content: center;
+    }
+
 
     </style>
 
@@ -119,11 +129,11 @@
     
     </nav>
 
-    <div>
-        <p id="quote"></p>
-        <button onclick="generateQuote()">SU Inspiration</button>
-      </div>
-    
+        <div class="quotediv">
+        <br><p id="quote"></p>
+        <button onclick="generateQuote()">SU Inspiration Generator</button>
+        </div>
+
       <script>
         const quotes = [
           "Syracuse is the best place on Earth",
