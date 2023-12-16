@@ -49,6 +49,8 @@ nav a {color: #000000}
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
+    button {background-color: #e6a04a;}
+
 /* FOOTER */
 
     .footertagline {float: right; font-family: 'Bebas Neue';}
