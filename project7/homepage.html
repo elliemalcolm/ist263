@@ -69,32 +69,28 @@
 
         .skip:focus {
         left: 10px;} 
-
+        .quotediv {
+      text-align: center; /* Center the content horizontally */
+      margin-top: 20px; /* Adjust the top margin as needed */
+    }
 
     #quote {
       font-size: 18px;
       margin-bottom: 20px;
       font-family: 'Merriweather';
-      text-align: center;
-      
     }
-    #quote:hover {color: #ec901e;}
 
     button {
       cursor: pointer;
-            text-align: center; 
-            padding:10px; 
+      text-align: center; /* Center the button text */
+      padding: 10px;
+      font-size: 16px; /* Adjust the font size as needed */
     }
 
     button:hover {
-        color:#ec901e;
-        border-color: #ec901e;
-    
-    }
-
-    .quotediv {
-        display: flex;
-  justify-content: center;
+      color: #ec901e;
+      border-color: #ec901e;
+    enter;
     }
 
 
@@ -130,16 +126,18 @@
     </nav>
 
         <div class="quotediv">
-        <br><p id="quote"></p>
+        <p id="quote"></p>
         <button onclick="generateQuote()">SU Inspiration Generator</button>
         </div>
 
       <script>
         const quotes = [
           "Syracuse is the best place on Earth",
-          "Why wouldn't you want to be at Syracuse University",
+          "Why wouldn't you want to be at Syracuse University?",
           "Sorry, I'm busy hanging with Otto",
           "BLEED ORANGE",
+          "I want a ticket to Syracuse University",
+          "Movies? Nah, I am going to hang at Syracuse Univeristy",
           "Syracuse University has my heart"
         ];
     
