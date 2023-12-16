@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="finalproject.css">
+    <style>
+
+        p {font-family: 'Noto Sans', sans-serif;}
+        .picture {margin: 5px; max-width: 100px;}
+        .carttext {text-align: center;}
+        .speakerimagecart {
+            max-width: 400px;}
+
+        .incart { width: 100%;
+            display: flex; 
+            justify-content: center; 
+              }
+        
+        .incartimage, .incartinfo {
+            justify-content:center; 
+            text-align: center;}
+
+        h2 {font-family: 'Bebas Neue';
+            font-size: 40px;
+            }
+
+        @media screen and (max-width: 850px) {
+            .incart {display: block; }
+            .incartinfo {padding: 15px;}
+ 
+        }
+        @media screen and (min-width: 851px) {
+            .incartimage, .incartinfo {width: 50%; justify-content:center; text-align: center;}
+        }
+
+        #speakerInfoDetails {display: none;}
+
+        button {
+            background-color:#e79c33;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Bebas Neue';
+            
+        }
+
+        #addtocart {            
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Bebas Neue';
+        }
+        
+        .incartdescription {font-family: 'Merriweather';}
+        #ticketquantity, #addtocart {font-family: 'Merriweather';}
+
+
+    </style>
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" type="image/x-icon" href="../project7/favicon.ico">
+    <title>Cart</title>
+
+    
+</head>
+
+<body>
+<main>
+        <div class="topofpage">
+            <div class="picturediv">
+               <a href="homepage.html"><img src="../images/SUlogo.png" class="picture" alt="Profile"> </a>
+           </div>
+           <div>
+            <h2 class="websitetitle">Syracuse University Ticket Hub</h2>
+           </div>
+        </div>
+    
+    <nav> <a href="homepage.html">Home</a> <span>|</span>
+        <a href="searchpage.html">Search</a> <span>|</span>
+        <a href="contactpage.html">Contact</a> <span>|</span>
+        <a href="cart.html" class="cart">&#128722;</a> <br>
+    
+    </nav>
+
+    <div class="incart">
+        <div class="incartimage">
+            <img src="../images/speakerimage.jpg" class="speakerimagecart" alt="advertising">
+        </div>
+
+        <div class="incartinfo">
+            <h2>Newhouse Speaker Series: "How To Become Your Best Career YOU"</h2>
+            <p class="incartdescription">Newhouse welcomes TEDx professional motivational speaker John Doe to provide students and all attendees with the resources to reach an optimal version of one's self in their career pursuits. Doe's life long passion is to equip those with both the mental strength and lifelong habits that keep you at the top of your game while still maintaining a wholistic lifestyle. </p>  
+
+            <button onclick="toggleText()">Show Details</button> <br> <br>
+
+            <p id="speakerInfoDetails">
+                <strong>Location:</strong> Dick Clark Studio B, Newhouse 2 <br>
+                <strong>Date:</strong> January 12, 2023 <br>
+                <strong>Time:</strong> 4:30pm to 6:00pm <br>
+                <strong>Zoom:</strong> Yes <br>
+                <strong>Ticket Availability:</strong> Seats available but limited to 6 per purchase
+            </p>
+
+            <script>
+                function toggleText() {
+                var additionalText = document.getElementById("speakerInfoDetails");
+                if (additionalText.style.display === "none" || additionalText.style.display === "") {
+                    additionalText.style.display = "block";
+                } else {
+                    additionalText.style.display = "none";
+                }
+                }
+            </script>
+
+
+            <label for="ticketquantity" id="ticketquantity">Ticket Quantity</label>
+            <select id="ticketquantity" name="ticketquantity">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">4</option>
+            <option value="3">5</option>
+            <option value="3">6</option>
+  </select>
+  <br> <br>
+
+            <form action="/submit" method="post" id="addtocart">
+
+                <input type="submit" value="Add to Cart" id="addtocart">
+            </form>
+
+        </div>
+    </div>
+    </main>
+    
+    <footer>
+        <hr>
+        <p> &copy;2023
+       <span class="footertagline">Go Orange.</span></p>
+       </footer>
+</body>
+</html>

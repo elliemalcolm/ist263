@@ -1,0 +1,58 @@
+
+/* WEBSITE TITLE */
+.websitetitle {
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 40px;
+}
+
+.topofpage {display: flex;}
+.header {
+    display: flex; 
+    align-items:center;
+}
+
+h2 {
+    margin: 10px; 
+    padding: 10px; 
+    justify-content: center;
+}
+
+/* NAV */
+
+nav {
+    padding:10px; 
+    margin-bottom: 30px; 
+    background-color: #ec901e;
+    font-family: 'Merriweather', serif; 
+    font-size: 20px;
+}
+nav a:hover {color: #ffffff;}
+nav a {color: #000000}
+@media only screen and (max-width: 500px) {
+    nav {display: block;} 
+    nav a {display: block; 
+            margin: 0 10px; 
+            padding: 2px;
+            background-color: #ec901e;
+            }
+    span {display: none;}
+    .cart {float: left;}
+    }
+    @media only screen and (min-width: 551px) {
+        .cart {float: right;}
+    }
+
+/* BODY */
+       
+       body {
+        background-color: #8fbbe6; 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+/* FOOTER */
+
+    .footertagline {float: right;}
+    footer {
+        font-family: 'Bebas Neue';
+        padding: 10px;
+    }
